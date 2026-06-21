@@ -4,7 +4,7 @@ title: "Media Gallery & Outreach"
 date: 2026-06-21 00:00:00 +0000
 ---
 
-<div class="container-fluid py-4 text-white" style="background-color: #000; font-family: system-ui, -apple-system, sans-serif;">
+<div>
     <h2 class="mb-4" style="letter-spacing: 1px; font-weight: 600; border-bottom: 1px solid #333; padding-bottom: 15px; color: #fff;">VIDEO</h2>
     <div class="row align-items-center my-5 py-3">
         <div class="col-md-6 mb-3 mb-md-0">
