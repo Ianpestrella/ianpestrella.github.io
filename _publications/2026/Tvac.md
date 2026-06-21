@@ -10,7 +10,6 @@ pub_date:       "2026"
 # semantic_scholar_id: 204e3073870fae3d05bcbc2f6a8e263d9b72e776  # use this to retrieve citation count
 abstract: >- 
 In this study, we present a Technology Readiness Level (TRL) 7 payload comprising a 4.2-megapixel sCMOS sensor and a lens with a $29.7$^\circ \ \times$ 29.7$^\circ$ field of view, which has flown three times on stratospheric balloon missions with the Canadian Space Agency and the Centre National d'Études Spatiales. 
-  
 authors:
   - Ian Porto
   - Marissa Myhre
