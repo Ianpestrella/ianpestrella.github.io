@@ -5,7 +5,7 @@ selected:       true
 pub:            "MDPI Sensors"
 # pub_pre:        "Submitted to "
 # pub_post:       'Under review.'
-pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Spotlight</span>'
+# pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Spotlight</span>'
 pub_date:       "2025"
 semantic_scholar_id: 2ddc655d3b7c0cf292836a0612078165eef6f8f3  # use this to retrieve citation count
 abstract: >-
