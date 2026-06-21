@@ -10,6 +10,6 @@ pages:
 # - name: Blog
 #   url: /blog
 - name: Gallery
-  url: gallery
+  url: /gallery
 - name: Showcase
   url: /showcase
