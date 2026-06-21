@@ -11,9 +11,9 @@ date: 2026-06-21 00:00:00 +0000
             <img src="/assets/images/photos/AlumniEvent.jpg" alt="Space Engineering Alumni Event" class="img-fluid rounded" style="border: 1px solid #222; width: 100%;" />
         </div>
         <div class="col-md-6 px-4">
-            <h3 style="font-size: 1.5rem; margin-bottom: 15px; color: #fff;">Space Engineering Alumni Event - 2025</h3>
-            <p line-height: 1.6;">
-                In November 2025 I had the opportunity to Co-Chair the Space Engineering Alumni Event. As a recent alumnus at the time this was a great honour. Read Lassonde's LinkedIn Post here: <a href="https://www.linkedin.com/posts/lassonde-school-of-engineering-york-university_spaceengineering-yupositivechange-yorkualumni-ugcPost-7402425260752748545-T6be/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAC9mFw0BC-x1LPpZ0KXgHrF5-xDRgI-wgAk" target="_blank" style="color: #3182ce; text-decoration: underline;">Space Engineering Alumni Event</a>.
+            <h3 style="font-size: 1.5rem; margin-bottom: 15px;">Space Engineering Alumni Event - 2025</h3>
+            <p style="line-height: 1.6;">
+                In November 2025 I had the opportunity to Co-Chair the Space Engineering Alumni Event. As a recent alumnus at the time this was a great honour. Read Lassonde's LinkedIn Post here: <a href="https://www.linkedin.com/posts/lassonde-school-of-engineering-york-university_spaceengineering-yupositivechange-yorkualumni-ugcPost-7402425260752748545-T6be/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAC9mFw0BC-x1LPpZ0KXgHrF5-xDRgI-wgAk" target="_blank" style="text-decoration: underline;">Space Engineering Alumni Event</a>.
             </p>
         </div>
     </div>
@@ -24,9 +24,9 @@ date: 2026-06-21 00:00:00 +0000
             </div>
         </div>
         <div class="col-md-6 px-4">
-            <h3 style="font-size: 1.5rem; margin-bottom: 15px; color: #fff;">This is Lassonde Podcast</h3>
-            <p style="color: #aaa; line-height: 1.6;">
-                Here you can listen to my episode on the "This Is Lassonde Podcast": <a href="https://www.podbean.com/media/share/pb-nbnp3-1550821?utm_campaign=w_share_ep&utm_source=w_share_pb&utm_medium=dlink" target="_blank" style="color: #3182ce; text-decoration: underline;">Engineering Beyond Earth with Ian Porto</a>.
+            <h3 style="font-size: 1.5rem; margin-bottom: 15px;">This is Lassonde Podcast</h3>
+            <p style="line-height: 1.6;">
+                Here you can listen to my episode on the "This Is Lassonde Podcast": <a href="https://www.podbean.com/media/share/pb-nbnp3-1550821?utm_campaign=w_share_ep&utm_source=w_share_pb&utm_medium=dlink" target="_blank" style="text-decoration: underline;">Engineering Beyond Earth with Ian Porto</a>.
             </p>
         </div>
     </div>
@@ -37,8 +37,8 @@ date: 2026-06-21 00:00:00 +0000
             </div>
         </div>
         <div class="col-md-6 px-4">
-            <h3 style="font-size: 1.5rem; margin-bottom: 15px; color: #fff;">LURA Introduction</h3>
-            <p style="color: #aaa; line-height: 1.6;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 15px;">LURA Introduction</h3>
+            <p style="line-height: 1.6;">
                 Here you can watch the Video by the Lassonde School of Engineering introducing my research.
             </p>
         </div>
@@ -50,8 +50,8 @@ date: 2026-06-21 00:00:00 +0000
             </div>
         </div>
         <div class="col-md-6 px-4">
-            <h3 style="font-size: 1.5rem; margin-bottom: 15px; color: #fff;">LURA Update</h3>
-            <p style="color: #aaa; line-height: 1.6;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 15px;">LURA Update</h3>
+            <p style="line-height: 1.6;">
                 Here you can watch the Video by the Lassonde School of Engineering updating the community about my research.
             </p>
         </div>
@@ -63,8 +63,8 @@ date: 2026-06-21 00:00:00 +0000
             </div>
         </div>
         <div class="col-md-6 px-4">
-            <h3 style="font-size: 1.5rem; margin-bottom: 15px; color: #fff;">LURA Final Update</h3>
-            <p style="color: #aaa; line-height: 1.6;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 15px;">LURA Final Update</h3>
+            <p style="line-height: 1.6;">
                 Here you can watch the video by the Lassonde School of Engineering showing the conclusion of my summer research to the Lassonde Community.
             </p>
         </div>
@@ -74,8 +74,8 @@ date: 2026-06-21 00:00:00 +0000
             <img src="/assets/images/photos/IanWithEssence.jpg" alt="ESSENCE CubeSat Cleanroom Integration" class="img-fluid rounded" style="max-height: 550px; border: 1px solid #222;" />
         </div>
         <div class="col-md-6 px-4">
-            <h3 style="font-size: 1.5rem; margin-bottom: 15px; color: #fff;">ESSENCE & Ian</h3>
-            <p style="color: #aaa; line-height: 1.6;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 15px;">ESSENCE & Ian</h3>
+            <p style="line-height: 1.6;">
                 Here I am with the ESSENCE CubeSat. ESSENCE launched on SpaceX's CRS-28 on June 5th and Deployed from the International Space Station on July 6th.
             </p>
         </div>
