@@ -1,6 +1,5 @@
 ---
 show: true
-width: 12 # Uses the full structural grid span so sections stack nicely
 title: "Media Gallery & Outreach"
 date: 2026-06-21 00:00:00 +0000
 ---
