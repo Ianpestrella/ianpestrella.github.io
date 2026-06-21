@@ -1,5 +1,22 @@
 ---
 layout: default
-title : Gallery
+title: Gallery
 navbar_title: Gallery
+container_class: container-xl
+permalink: /gallery.html
 ---
+
+<div class="row grid mb-4">
+    <div class="grid-sizer col-1"></div>
+    
+    {% assign gallery_items = site.gallery | sort: "date" | reverse %}
+    {% for item in gallery_items %}
+        {% if item.show %}
+            <div class="p-2 grid-item col-12">
+                <div class="card border-0 shadow-sm bg-black text-white rounded-3 overflow-hidden">
+                    {{ item.content }}
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>
