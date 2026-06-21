@@ -5,14 +5,14 @@ date: 2026-06-21 00:00:00 +0000
 ---
 
 <div>
-    <h2 class="mb-4" style="letter-spacing: 1px; font-weight: 600; border-bottom: 1px solid #333; padding-bottom: 15px; color: #fff;">VIDEO</h2>
+    <h2>VIDEO</h2>
     <div class="row align-items-center my-5 py-3">
         <div class="col-md-6 mb-3 mb-md-0">
             <img src="/assets/images/photos/AlumniEvent.jpg" alt="Space Engineering Alumni Event" class="img-fluid rounded" style="border: 1px solid #222; width: 100%;" />
         </div>
         <div class="col-md-6 px-4">
             <h3 style="font-size: 1.5rem; margin-bottom: 15px; color: #fff;">Space Engineering Alumni Event - 2025</h3>
-            <p style="color: #aaa; line-height: 1.6;">
+            <p line-height: 1.6;">
                 In November 2025 I had the opportunity to Co-Chair the Space Engineering Alumni Event. As a recent alumnus at the time this was a great honour. Read Lassonde's LinkedIn Post here: <a href="https://www.linkedin.com/posts/lassonde-school-of-engineering-york-university_spaceengineering-yupositivechange-yorkualumni-ugcPost-7402425260752748545-T6be/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAC9mFw0BC-x1LPpZ0KXgHrF5-xDRgI-wgAk" target="_blank" style="color: #3182ce; text-decoration: underline;">Space Engineering Alumni Event</a>.
             </p>
         </div>
