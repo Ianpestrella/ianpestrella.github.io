@@ -2,7 +2,7 @@
 title:          "Hardware-in-the-loop validation of physics-informed neural network for angles-only initial orbit determination in very short arcs"
 date:           2026-08-04
 selected:       true
-pub:            "46th Committee on Space Research (COSPAR) Scientific Assembly 2026"
+pub:            "46th Committee on Space Research (COSPAR) Scientific Assembly"
 pub_pre:        "Accepted to "
 # pub_post:       'Under review.'
 pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Spotlight</span>'
