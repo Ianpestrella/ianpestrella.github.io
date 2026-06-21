@@ -5,7 +5,7 @@ date: 2026-06-21 00:00:00 +0000
 ---
 
 <div>
-    <h2>VIDEO</h2>
+    <h2 class="mb-4 text-uppercase" style="letter-spacing: 1px; font-weight: 600; border-bottom: 1px solid #ddd; padding-bottom: 15px;">Video & Outreach</h2>
     <div class="row align-items-center my-5 py-3">
         <div class="col-md-6 mb-3 mb-md-0">
             <img src="/assets/images/photos/AlumniEvent.jpg" alt="Space Engineering Alumni Event" class="img-fluid rounded" style="border: 1px solid #222; width: 100%;" />
