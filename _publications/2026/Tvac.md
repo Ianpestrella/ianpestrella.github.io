@@ -13,7 +13,7 @@ abstract: >-
 authors:
   - Ian Porto
   - Marissa Myhre
-  - Vithursan Suthakar
+  - Vithurshan Suthakar
   - Regina S.K. Lee
 links:
   Conference: https://iaaspace.org/event/5th-iaa-conference-on-space-situational-awareness-icssa-2026/
