@@ -40,3 +40,33 @@ $(function () {
         $grid.masonry('layout');
     });
 })
+
+/* ===== Dark Mode Toggle Logic ===== */
+document.addEventListener("DOMContentLoaded", function() {
+    const toggleBtn = document.getElementById('theme-toggle');
+    if (!toggleBtn) return;
+    
+    const icon = toggleBtn.querySelector('i');
+
+    // Set initial icon
+    if (document.documentElement.getAttribute('data-theme') === 'dark') {
+        icon.classList.replace('fa-moon', 'fa-sun');
+    } else {
+        icon.classList.replace('fa-sun', 'fa-moon');
+    }
+
+    // Toggle behavior
+    toggleBtn.addEventListener('click', function() {
+        let currentTheme = document.documentElement.getAttribute('data-theme');
+        let targetTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+        document.documentElement.setAttribute('data-theme', targetTheme);
+        localStorage.setItem('theme', targetTheme);
+
+        if (targetTheme === 'dark') {
+            icon.classList.replace('fa-moon', 'fa-sun');
+        } else {
+            icon.classList.replace('fa-sun', 'fa-moon');
+        }
+    });
+});
