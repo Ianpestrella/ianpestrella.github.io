@@ -9,7 +9,9 @@ pages:
   url: /publications
 # - name: Blog
 #   url: /blog
-- name: Gallery
+- name: Outreach
   url: /gallery
+- name: Documents
+  url: /documents
 - name: Showcase
   url: /showcase
