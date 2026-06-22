@@ -1,4 +1,5 @@
 ---
+layout: default
 show: true
 title: "Media Gallery & Outreach"
 date: 2026-06-21 00:00:00 +0000
