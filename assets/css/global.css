@@ -206,3 +206,30 @@ html.lang-active-zh .lang-zh {
 [data-theme="dark"] a.text-black:active {
     color: #90caf9 !important;
 }
+
+/* 1. Override the explicit 'bg-white' class on the outer container */
+[data-theme="dark"] .bg-white {
+    background-color: #1e1e1e !important;
+    color: #e0e0e0 !important;
+}
+
+/* 2. Override the hardcoded inline rgba(255,255,255) in the mobile view */
+[data-theme="dark"] .d-md-none .w-100 {
+    background-color: rgba(30, 30, 30, 0.9) !important;
+}
+
+/* 3. Darken the internal border lines so they don't glow bright gray */
+[data-theme="dark"] .border-gray {
+    border-color: #333 !important;
+}
+
+/* 4. Ensure titles and headers stay crisp and white */
+[data-theme="dark"] .bg-white h5,
+[data-theme="dark"] .bg-white h6 {
+    color: #ffffff !important;
+}
+
+/* 5. Brighten the 'text-muted' class (the abstract text) so it's readable on dark backgrounds */
+[data-theme="dark"] .text-muted {
+    color: #aaaaaa !important; 
+}
