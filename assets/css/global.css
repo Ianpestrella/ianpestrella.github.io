@@ -173,3 +173,36 @@ html.lang-active-zh .lang-zh {
   left: 0;
   z-index: -1;
 }
+
+/* ===== Dark Mode Overrides ===== */
+[data-theme="dark"] body {
+    background-color: #121212 !important;
+    color: #e0e0e0;
+}
+
+[data-theme="dark"] .bg-light,
+[data-theme="dark"] .card,
+[data-theme="dark"] .navbar {
+    background-color: #1e1e1e !important;
+    border-color: #333 !important;
+    color: #e0e0e0;
+}
+
+[data-theme="dark"] .card-title,
+[data-theme="dark"] .card-text,
+[data-theme="dark"] .nav-link,
+[data-theme="dark"] .navbar-brand,
+[data-theme="dark"] a.text-black {
+    color: #e0e0e0 !important;
+}
+
+/* Update particles background color for dark mode */
+[data-theme="dark"] #particles-js {
+    background-color: #121212 !important;
+}
+
+/* Ensure hovered links stay readable */
+[data-theme="dark"] a.text-black:hover,
+[data-theme="dark"] a.text-black:active {
+    color: #90caf9 !important;
+}
