@@ -233,3 +233,7 @@ html.lang-active-zh .lang-zh {
 [data-theme="dark"] .text-muted {
     color: #aaaaaa !important; 
 }
+
+[data-theme="dark"] .text-black {
+    color: #e0e0e0 !important;
+}
