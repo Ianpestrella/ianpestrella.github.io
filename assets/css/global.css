@@ -91,3 +91,76 @@ div.lazy {
 .email-text {
     font-family: Source Code Pro, monospace;
 }
+
+.badge-custom {
+    font-size: 100%;
+}
+
+.email-text {
+    font-family: Courier, monospace;
+}
+
+.text-black {
+  color: #000 !important;
+}
+
+a.text-black:link,
+a.text-black:visited{
+  color: #000;
+  text-decoration: none;
+}
+a.text-black:hover,
+a.text-black:active{
+  color: #000;
+  text-decoration: none;
+}
+
+/* ===== i18n Language Toggle ===== */
+.lang-zh {
+    display: none !important;
+}
+
+html.lang-active-zh .lang-en {
+    display: none !important;
+}
+
+html.lang-active-zh .lang-zh {
+    display: inline !important;
+}
+
+/* Language toggle switch */
+.lang-toggle {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #d0dde8;
+    border-radius: 4px;
+    overflow: hidden;
+    font-size: 0.8rem;
+    margin-left: 0.75rem;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.lang-toggle-label {
+    padding: 0.2rem 0.5rem;
+    color: #999;
+    transition: all 0.2s ease;
+    user-select: none;
+    line-height: 1.4;
+}
+
+.lang-toggle-label:hover {
+    color: #4a7298;
+}
+
+.lang-toggle-active {
+    background-color: #4a7298;
+    color: #fff !important;
+    font-weight: 500;
+}
+
+.lang-toggle-divider {
+    width: 1px;
+    background-color: #d0dde8;
+    height: 1rem;
+}
