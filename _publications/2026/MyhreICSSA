@@ -1,0 +1,21 @@
+---
+title:          "Centroid Algorithm Comparison in a Dual-Use Star Tracker for Space Situational Awareness"
+date:           2026-04-08
+selected:       true
+pub:            "5th IAA Conference on Space Situational Awareness"
+# pub_pre:        "Submitted to "
+# pub_post:       'Under review.'
+pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Spotlight</span>'
+pub_date:       "2026"
+# semantic_scholar_id: 204e3073870fae3d05bcbc2f6a8e263d9b72e776  # use this to retrieve citation count
+abstract: >- 
+  In this study, four centroid algorithms were tested with the NASA open-source commercial off-the-shelf star tracker software: grey-weighted, moments-based, intensity-squared weighted, and 1D Gaussian centroiding methods. The four centroid algorithms were evaluated using images from the dual-use star tracker payload taken on a stratospheric balloon qualification flight, with the centroid performance compared to the reprojected plate-solved reference solution from astrometry.net.
+authors:
+  - Marissa Myhre
+  - Ian Porto
+  - Vithurshan Suthakar
+  - Regina S.K. Lee
+links:
+  Conference: https://iaaspace.org/event/5th-iaa-conference-on-space-situational-awareness-icssa-2026/
+  PDF: /assets/docs/ICSSA2026_Marissa_Myhre.pdf
+---
