@@ -237,3 +237,19 @@ html.lang-active-zh .lang-zh {
 [data-theme="dark"] .text-black {
     color: #e0e0e0 !important;
 }
+
+/* 6. Bulletproof targeting for author lists and publication details */
+[data-theme="dark"] .bg-white p.small,
+[data-theme="dark"] .bg-white p.small a,
+[data-theme="dark"] .bg-white p.small span:not(.badge),
+[data-theme="dark"] .d-md-none .w-100 p.small,
+[data-theme="dark"] .d-md-none .w-100 p.small a,
+[data-theme="dark"] .d-md-none .w-100 p.small span:not(.badge) {
+    color: #e0e0e0 !important;
+}
+
+/* 7. Restore the slightly dimmer color for the abstract paragraph so it maintains visual hierarchy */
+[data-theme="dark"] .bg-white p.text-muted,
+[data-theme="dark"] .d-md-none .w-100 p.text-muted {
+    color: #aaaaaa !important;
+}
