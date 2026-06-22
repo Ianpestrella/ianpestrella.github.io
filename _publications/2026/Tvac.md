@@ -17,5 +17,5 @@ authors:
   - Regina S.K. Lee
 links:
   Conference: https://iaaspace.org/event/5th-iaa-conference-on-space-situational-awareness-icssa-2026/
-  Paper: /icssa/
+  Paper: /icssa2026/
 ---
