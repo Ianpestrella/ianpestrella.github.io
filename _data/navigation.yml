@@ -13,5 +13,5 @@ pages:
   url: /gallery
 - name: Documents
   url: /documents
-- name: Showcase
-  url: /showcase
+# - name: Showcase
+#   url: /showcase
