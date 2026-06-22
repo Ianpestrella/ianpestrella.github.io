@@ -4,8 +4,7 @@ title: "Media Gallery & Outreach"
 date: 2026-06-21 00:00:00 +0000
 ---
 
-<div>
-    <h2 class="mb-4 text-uppercase" style="letter-spacing: 1px; font-weight: 600; border-bottom: 1px solid #ddd; padding-bottom: 15px;">Video & Outreach</h2>
+<div class="container py-4">
     <div class="row align-items-center my-5 py-3">
         <div class="col-md-6 mb-3 mb-md-0">
             <img src="/assets/images/photos/AlumniEvent.jpg" alt="Space Engineering Alumni Event" class="img-fluid rounded" style="border: 1px solid #222; width: 100%;" />
@@ -17,7 +16,8 @@ date: 2026-06-21 00:00:00 +0000
             </p>
         </div>
     </div>
-    <div class="row align-items-center my-5 py-3 flex-md-row-reverse">
+
+<div class="row align-items-center my-5 py-3 flex-md-row-reverse">
         <div class="col-md-6 mb-3 mb-md-0">
             <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 6px;">
                 <iframe src="https://www.youtube.com/embed/9hXolGY4ujg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen></iframe>
@@ -30,7 +30,8 @@ date: 2026-06-21 00:00:00 +0000
             </p>
         </div>
     </div>
-    <div class="row align-items-center my-5 py-3">
+
+<div class="row align-items-center my-5 py-3">
         <div class="col-md-6 mb-3 mb-md-0">
             <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 6px;">
                 <iframe src="https://www.youtube.com/embed/diPEj23Nrio" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen></iframe>
@@ -43,7 +44,8 @@ date: 2026-06-21 00:00:00 +0000
             </p>
         </div>
     </div>
-    <div class="row align-items-center my-5 py-3 flex-md-row-reverse">
+
+<div class="row align-items-center my-5 py-3 flex-md-row-reverse">
         <div class="col-md-6 mb-3 mb-md-0">
             <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 6px;">
                 <iframe src="https://www.youtube.com/embed/ljIHXewciOA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen></iframe>
@@ -56,7 +58,8 @@ date: 2026-06-21 00:00:00 +0000
             </p>
         </div>
     </div>
-    <div class="row align-items-center my-5 py-3">
+
+<div class="row align-items-center my-5 py-3">
         <div class="col-md-6 mb-3 mb-md-0">
             <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 6px;">
                 <iframe src="https://www.youtube.com/embed/UpTS2u3AwTk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen></iframe>
@@ -69,7 +72,8 @@ date: 2026-06-21 00:00:00 +0000
             </p>
         </div>
     </div>
-    <div class="row align-items-center my-5 py-3 flex-md-row-reverse">
+
+<div class="row align-items-center my-5 py-3 flex-md-row-reverse">
         <div class="col-md-6 mb-3 mb-md-0 text-center">
             <img src="/assets/images/photos/IanWithEssence.jpg" alt="ESSENCE CubeSat Cleanroom Integration" class="img-fluid rounded" style="max-height: 550px; border: 1px solid #222;" />
         </div>
@@ -80,5 +84,4 @@ date: 2026-06-21 00:00:00 +0000
             </p>
         </div>
     </div>
-
 </div>
