@@ -1,7 +1,7 @@
 ---
 title:          "Shallow Neural Network Centroid Algorithm Comparison for a Dual-Use Star Tracker Payload for Space Situational Awareness"
 date:           2026-08-04
-selected:       true
+selected:       false
 pub:            "46th Committee on Space Research (COSPAR) Scientific Assembly"
 pub_pre:        "Accepted to "
 # pub_post:       'Under review.'
