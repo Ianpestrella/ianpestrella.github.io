@@ -5,7 +5,7 @@ navbar_name: "Ian Porto"
 positions:
 - name: PhD Student
 - name: Nanosatellite Research Laboratory at York University
-  logo: /assets/images/badges/NRLYSmall.png  # Logo is optional
+- logo: /assets/images/badges/NRLYSmall.png  # Logo is optional
 
 
 email: "Ianporto@my.yorku.ca"
