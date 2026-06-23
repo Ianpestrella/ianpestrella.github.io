@@ -1,7 +1,7 @@
 ---
 title:          "RSONAR: Data-Driven Evaluation of Dual-Use Star Tracker for Stratospheric Space Situational Awareness (SSA)"
 date:           2024-12-26 
-selected:       true
+selected:       false
 pub:            "MDPI Sensors"
 # pub_pre:        "Submitted to "
 # pub_post:       'Under review.'
