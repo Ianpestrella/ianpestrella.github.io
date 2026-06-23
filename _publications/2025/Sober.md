@@ -1,7 +1,7 @@
 ---
 title:          "Stratospheric Observation of Resident Space Objects Using Photometric and Infrared Sensors"
 date:           2025-04-04
-selected:       true
+selected:       false
 pub:            "9th European Conference on Space Debris"
 # pub_pre:        "Submitted to "
 # pub_post:       'Under review.'
