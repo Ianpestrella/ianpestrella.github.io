@@ -10,7 +10,7 @@ particlesJS("particles-js", {
       "type": "circle" 
     },
     "opacity": { 
-      "value": 0.5 
+      "value": 0.8 
     },
     "size": { 
       "value": 3 
@@ -19,7 +19,7 @@ particlesJS("particles-js", {
       "enable": true,
       "distance": 150,
       "color": "#888888",
-      "opacity": 0.4,
+      "opacity": 0.6,
       "width": 1
     },
     "move": {
