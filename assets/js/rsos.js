@@ -15,15 +15,20 @@
 
         const ctx = canvas.getContext('2d');
         let rsos = [];
-        const maxRSOs = 5; 
+        const maxRSOs = 6; 
 
-        // Catalog array of high-visibility aerospace instrument tracking colors
+        // Catalog array of 10 high-visibility tactical tracking colors (RGB format)
         const trackingColors = [
-            { core: 'rgba(0, 220, 255, 0.9)', trail: 'rgba(0, 180, 255, 0.4)' },   // Cyan
-            { core: 'rgba(0, 255, 150, 0.9)', trail: 'rgba(0, 255, 120, 0.4)' },   // Neon Green
-            { core: 'rgba(255, 180, 0, 0.9)', trail: 'rgba(255, 150, 0, 0.4)' },   // Amber / Gold
-            { core: 'rgba(255, 60, 100, 0.9)', trail: 'rgba(255, 40, 80, 0.4)' },   // Ruby Red
-            { core: 'rgba(200, 100, 255, 0.9)', trail: 'rgba(180, 80, 255, 0.4)' }  // Electric Purple
+            { r: 0,   g: 220, b: 255 },  // 1. Cyan
+            { r: 255, g: 0,   b: 255 },  // 2. Magenta
+            { r: 255, g: 30,  b: 30  },  // 3. Bright Red
+            { r: 0,   g: 255, b: 100 },  // 4. Bright Green
+            { r: 255, g: 230, b: 0   },  // 5. Yellow
+            { r: 255, g: 120, b: 0   },  // 6. Orange
+            { r: 255, g: 255, b: 255 },  // 7. White
+            { r: 255, g: 100, b: 180 },  // 8. Pink
+            { r: 160, g: 100, b: 255 },  // 9. Electric Purple
+            { r: 0,   g: 255, b: 255 }   // 10. Electric Teal
         ];
 
         function resize() {
@@ -36,6 +41,7 @@
         class SatTrack {
             constructor() {
                 this.reset();
+                // Scatter them randomly across the screen on the very first load
                 this.x = Math.random() * canvas.width;
                 this.y = Math.random() * canvas.height;
             }
@@ -44,8 +50,8 @@
                 this.maxHistory = Math.floor(Math.random() * 25) + 25; 
                 this.radius = Math.random() * 1.5 + 1;
                 
-                // Select a random color profile for this target configuration lifecycle
-                this.colorProfile = trackingColors[Math.floor(Math.random() * trackingColors.length)];
+                // Select a random color profile from the 10 choices
+                this.color = trackingColors[Math.floor(Math.random() * trackingColors.length)];
                 
                 const baseSpeed = Math.random() * 2.5 + 2; 
                 const edge = Math.floor(Math.random() * 4); 
@@ -92,9 +98,10 @@
                         ctx.lineTo(this.history[i].x, this.history[i].y);
                     }
                     
+                    // Create gradient dynamically matching the object's specific color
                     let gradient = ctx.createLinearGradient(this.history[0].x, this.history[0].y, this.x, this.y);
-                    gradient.addColorStop(0, 'rgba(0, 0, 0, 0.0)');
-                    gradient.addColorStop(1, this.colorProfile.trail);
+                    gradient.addColorStop(0, `rgba(${this.color.r}, ${this.color.g}, ${this.color.b}, 0.0)`);
+                    gradient.addColorStop(1, `rgba(${this.color.r}, ${this.color.g}, ${this.color.b}, 0.4)`);
                     
                     ctx.strokeStyle = gradient;
                     ctx.lineWidth = 1.5;
@@ -103,7 +110,7 @@
 
                 ctx.beginPath();
                 ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-                ctx.fillStyle = this.colorProfile.core;
+                ctx.fillStyle = `rgba(${this.color.r}, ${this.color.g}, ${this.color.b}, 0.9)`;
                 ctx.fill();
             }
         }
