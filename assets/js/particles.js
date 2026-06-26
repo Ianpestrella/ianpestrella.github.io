@@ -13,7 +13,7 @@ particlesJS("particles-js", {
       "value": 0.5 
     },
     "size": { 
-      "value": 2 
+      "value": 1.5 
     },
     "line_linked": {
       "enable": true,
