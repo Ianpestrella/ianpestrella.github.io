@@ -1,16 +1,38 @@
-<footer class="footer border-top py-2 mt-5 bg-white small">
+<footer class="footer border-top border-secondary py-4 mt-5 small text-muted">
     <div class="{% if page.container_class %}{{ page.container_class }}{% else %}container-lg{% endif %}">
-        <div class="row my-3">
-            <div class="col-6">
-                <div class="text-muted">
+        <div class="row align-items-center">
+            
+            <div class="col-md-4 text-center text-md-left mb-2 mb-md-0">
+                <span>&copy; {{ "now" | date: "%Y" }} Ian Porto. All rights reserved.</span>
+                <div class="text-muted extra-small mt-1" style="font-size: 0.75rem;">
                     <i>Last updated: {{ "now" | date: "%b %Y" }}</i>
                 </div>
             </div>
-            <div class="col-6">
-                <div class="text-right text-muted">
-                    {{ site.data.display.footer_text }}
+            
+            <div class="col-md-4 text-center mb-2 mb-md-0">
+                <div class="footer-social-icons">
+                    <a href="https://linkedin.com" target="_blank" class="mx-2 text-muted" title="LinkedIn"><i class="fab fa-linkedin fa-lg"></i></a>
+                    <a href="https://github.com" target="_blank" class="mx-2 text-muted" title="GitHub"><i class="fab fa-github fa-lg"></i></a>
+                    <a href="https://orcid.org" target="_blank" class="mx-2 text-muted" title="ORCID"><i class="ai ai-orcid fa-lg"></i></a>
+                    <a href="https://scholar.google.com" target="_blank" class="mx-2 text-muted" title="Google Scholar"><i class="ai ai-google-scholar fa-lg"></i></a>
                 </div>
             </div>
+            
+            <div class="col-md-4 text-center text-md-right">
+                <span style="font-size: 0.8rem;">
+                    Built with <i class="fas fa-code text-secondary"></i> via Jekyll &amp; Pages
+                </span>
+            </div>
+
         </div>
     </div>
 </footer>
+
+<style>
+    .footer-social-icons a {
+        transition: color 0.2s ease-in-out;
+    }
+    .footer-social-icons a:hover {
+        color: #00d2ff !important; /* Glows matching your tracking RSO matrix on hover! */
+    }
+</style>
