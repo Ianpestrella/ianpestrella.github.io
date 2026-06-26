@@ -11,11 +11,11 @@ particlesJS("particles-js", {
       "type": "circle" 
     },
     "opacity": { 
-      "value": 0.4,
+      "value": 0.8,
       "random": true // Simulates varying star magnitudes
     },
     "size": { 
-      "value": 1.5,
+      "value": 6,
       "random": true 
     },
     "line_linked": {
