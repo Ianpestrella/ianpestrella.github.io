@@ -1,23 +1,21 @@
-/* High-Speed Resident Space Object (RSO) Streak Layer */
+/* High-Speed Multi-Directional Resident Space Object (RSO) Streak Layer */
 (function() {
-    // Wait for particles-js canvas to initialize so we can overlay safely
     window.addEventListener('load', () => {
         const targetDiv = document.getElementById('particles-js');
         if (!targetDiv) return;
 
-        // Create a secondary overlay canvas for the streaking objects
         const canvas = document.createElement('canvas');
         canvas.style.position = 'absolute';
         canvas.style.top = '0';
         canvas.style.left = '0';
         canvas.style.width = '100%';
         canvas.style.height = '100%';
-        canvas.style.pointerEvents = 'none'; // Lets clicks pass through to particles.js
+        canvas.style.pointerEvents = 'none'; 
         targetDiv.appendChild(canvas);
 
         const ctx = canvas.getContext('2d');
         let rsos = [];
-        const maxRSOs = 4; // Number of active satellite streaks crossing at once
+        const maxRSOs = 5; // Total active tracking signatures
 
         function resize() {
             canvas.width = window.innerWidth;
@@ -28,25 +26,63 @@
 
         class SatTrack {
             constructor() {
-                this.reset();
-                this.x = Math.random() * canvas.width; // Stagger initial load across viewport
+                this.reset(true); // Initial scatter on page load
             }
-            reset() {
-                this.x = -100;
-                this.y = Math.random() * (canvas.height * 0.7); // Keep tracks in upper/mid atmosphere
-                this.speed = Math.random() * 3 + 2; // Noticeably faster than background stars
-                this.angle = (Math.random() - 0.1) * 0.15; // Realistic low-inclination path vector
+            reset(initScatter = false) {
                 this.history = [];
-                this.maxHistory = Math.floor(Math.random() * 30) + 25; // Controls length of the fading streak
+                this.maxHistory = Math.floor(Math.random() * 25) + 25; 
+                this.radius = Math.random() * 1.5 + 1;
+                
+                // Determine a base movement speed profile
+                const speed = Math.random() * 2.5 + 2; 
+                // Random angle spanning the full 360-degree orbital grid
+                const angle = Math.random() * Math.PI * 2; 
+                
+                // Break down speed into directional component vectors
+                this.vx = Math.cos(angle) * speed;
+                this.vy = Math.sin(angle) * speed;
+
+                if (initScatter) {
+                    // Randomly scatter vectors directly inside the screen view space on first load
+                    this.x = Math.random() * canvas.width;
+                    this.y = Math.random() * canvas.height;
+                } else {
+                    // Spawn objects just outside one of the 4 screen boundaries based on their path velocity
+                    const startEdge = Math.floor(Math.random() * 4);
+                    
+                    if (startEdge === 0) { // Spawn off Left
+                        this.x = -50;
+                        this.y = Math.random() * canvas.height;
+                        if (this.vx < 0) this.vx *= -1; // Force moving right
+                    } else if (startEdge === 1) { // Spawn off Right
+                        this.x = canvas.width + 50;
+                        this.y = Math.random() * canvas.height;
+                        if (this.vx > 0) this.vx *= -1; // Force moving left
+                    } else if (startEdge === 2) { // Spawn off Top
+                        this.x = Math.random() * canvas.width;
+                        this.y = -50;
+                        if (this.vy < 0) this.vy *= -1; // Force moving down
+                    } else { // Spawn off Bottom
+                        this.x = Math.random() * canvas.width;
+                        this.y = canvas.height + 50;
+                        if (this.vy > 0) this.vy *= -1; // Force moving up
+                    }
+                }
             }
             update() {
+                // Record past tracking position coordinates for trail rendering
                 this.history.push({ x: this.x, y: this.y });
                 if (this.history.length > this.maxHistory) this.history.shift();
 
-                this.x += this.speed;
-                this.y += Math.sin(this.angle) * this.speed;
+                // Propagate the orbital coordinates
+                this.x += this.vx;
+                this.y += this.vy;
 
-                if (this.x > canvas.width + 100) this.reset();
+                // Recycle object if it flies out of the active observational tracking bounds
+                if (this.x < -100 || this.x > canvas.width + 100 || 
+                    this.y < -100 || this.y > canvas.height + 100) {
+                    this.reset();
+                }
             }
             draw() {
                 if (this.history.length > 1) {
@@ -56,9 +92,9 @@
                         ctx.lineTo(this.history[i].x, this.history[i].y);
                     }
                     
-                    // High-contrast tracking colors (cyan/teal instrumented glow)
+                    // Create an explicit directional linear gradient trail
                     let gradient = ctx.createLinearGradient(this.history[0].x, this.history[0].y, this.x, this.y);
-                    gradient.addColorStop(0, 'rgba(0, 210, 255, 0.0)');
+                    gradient.addColorStop(0, 'rgba(0, 200, 255, 0.0)');
                     gradient.addColorStop(1, 'rgba(0, 180, 255, 0.4)');
                     
                     ctx.strokeStyle = gradient;
@@ -66,10 +102,10 @@
                     ctx.stroke();
                 }
 
-                // Render active tracking beacon payload head
+                // Render active target payload core node
                 ctx.beginPath();
-                ctx.arc(this.x, this.y, 2, 0, Math.PI * 2);
-                ctx.fillStyle = 'rgba(0, 230, 255, 0.9)';
+                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                ctx.fillStyle = 'rgba(0, 220, 255, 0.9)';
                 ctx.fill();
             }
         }
