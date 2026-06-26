@@ -10,10 +10,10 @@ particlesJS("particles-js", {
       "type": "circle" 
     },
     "opacity": { 
-      "value": 0.8 
+      "value": 0.6 
     },
     "size": { 
-      "value": 3 
+      "value": 2 
     },
     "line_linked": {
       "enable": true,
