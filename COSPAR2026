@@ -1,0 +1,67 @@
+---
+layout: default
+title: "ICSSA Landing Page"
+navbar_title: "ICSSA"
+container_class: container-xl
+permalink: /cospar2026/
+---
+
+<div class="container-fluid py-4">
+    
+    <h1 class="mb-4 text-uppercase" style="letter-spacing: 1px; font-weight: 600; border-bottom: 1px solid #ddd; padding-bottom: 15px;">
+        COSPAR LANDING PAGE - NOTE: THIS PAGE IS A WORK IN PROGRESS
+    </h1>
+
+    <div class="row align-items-start my-5">
+        <div class="col-md-4 mb-4 mb-md-0 text-center">
+            <img src="/assets/images/photos/portrait.jpg" alt="Ian Porto" class="img-fluid rounded shadow-sm" style="width: 100%; max-width: 320px;" />
+        </div>
+        
+        <div class="col-md-8 px-md-4">
+            <h2 class="h4 mb-3" style="font-weight: 500;">About Me</h2>
+            <p class="text-muted" style="line-height: 1.6;">
+                Hi there, My name is Ian Porto, I am currently a Master of Sciences student at York University. My current research involves space situational awareness sensor pointing optimization and some scheduling for them. I am also quite interested in AI-based initial orbit determination.
+            </p>
+            <p class="text-muted" style="line-height: 1.6;">
+                Given that you probably got here from my COSPAR poster, you likely know about my Physics-Informed Neural Network for Very Short Arc Initial Orbit Determination. This work really aims to create a neural network that will work off of "real" images. These images have been made by actually using our Multi-Use Star Tracker Payload alongside a hardware-in-the-loop Starfield Simulator which was also able to simulate RSO motion.
+            </p>
+
+            <h2 class="h5 mt-4 mb-3" style="font-weight: 500;">My Links</h2>
+            <div class="d-flex flex-column align-items-start" style="gap: 10px;">
+                <a href="https://www.linkedin.com/in/ian-porto/" target="_blank" class="btn btn-outline-primary btn-sm shadow-sm px-4" style="min-width: 160px; font-weight: 500;">
+                    LinkedIn
+                </a>
+                <a href="/" class="btn btn-outline-primary btn-sm shadow-sm px-4" style="min-width: 160px; font-weight: 500;">
+                    Website Home Page
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <hr style="border-top: 1px solid #ddd; margin: 40px 0;" />
+
+    <div class="my-4">
+        <h2 class="h4 text-uppercase mb-4" style="letter-spacing: 0.5px; font-weight: 600;">Poster and Paper</h2>
+        
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="p-4 border rounded shadow-sm text-center bg-light-card" style="border: 1px solid #eee;">
+                    <h3 class="h5 mb-3" style="font-weight: 500;">Full Paper (pdf)</h3>
+                    <a href="/assets/docs/ICSSA_Full_Paper.pdf" download class="btn btn-primary btn-sm px-4" style="font-weight: 500;">
+                        Not Yet Available
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="p-4 border rounded shadow-sm text-center bg-light-card" style="border: 1px solid #eee;">
+                    <h3 class="h5 mb-3" style="font-weight: 500;">Poster (pdf)</h3>
+                    <a href="/assets/docs/ICSSA_Poster.pdf" download class="btn btn-primary btn-sm px-4" style="font-weight: 500;">
+                        Download
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
